@@ -2,16 +2,9 @@
   
 import UIKit
 
-// define two integer arrays, one for daily pay and one for total calculated pay
+// define two arrays, one for daily pay and one for total calculated pay
 var dailyPay:[Any] = []
 var totalPay:[Any] = []
-
-// define integer variable that stores the value for number of days of pay the pgm will calculate
-//var numOfDays = 30
-//print("Days")
-//for value in 1...numOfDays {
-//    print(value)
-//}
 
 // pay per day. first day is 1 cent, second day is 2 cents, each day after it doubles
 // calculates daily pay making double each day, adds to array called 'dailyPay'
@@ -39,25 +32,21 @@ print(dailyPay)
 
 // takes dailyPay and adds up each day
 print("\nTotal Pay")
-//i = 0
-//var tempValue = 0.0
-//
-//while (i < dailyPay.count) {
-//    tempValue += dailyPay[i] as! Double
-//    tempValue = Double(round(100*tempValue)/100)
-//    totalPay.append(contentsOf: [tempValue])
-//
-//    i += 1
-//}
+
 print(totalPay, "\n")
 
 
 // output results properly
-print("Day Daily Pay   Total Pay")
+let colPadding1 = 8
+let colPadLength = 12
+let headerString = "Day".padding(toLength: colPadding1, withPad: " ", startingAt: 0) + "Daily Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0) + "Total Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0)
+
+print("\(headerString)\n")
 i = 0
 while ( i < (numOfDays) ) {
     i += 1
-    print(i, " $", dailyPay[i-1], " $", totalPay[i-1])
+
+    print("\(i)".padding(toLength: colPadding1, withPad: " ", startingAt: 0)  + ("$\(dailyPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0)) + "$\(totalPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0))
 }
 
 
