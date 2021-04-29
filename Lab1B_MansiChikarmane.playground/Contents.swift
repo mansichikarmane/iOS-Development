@@ -6,13 +6,14 @@ import UIKit
 var dailyPay:[Any] = []
 var totalPay:[Any] = []
 
-// pay per day. first day is 1 cent, second day is 2 cents, each day after it doubles
-// calculates daily pay making double each day, adds to array called 'dailyPay'
-print("\nDaily Pay")
+// create interver variable which will store value for number of days ('numOfDays')
 var numOfDays = 30
+
+// loop and elements to add values to the dailyPay and totalPay arrays
 var first = 0.01
 var i = 0
 var tempValue = 0.0
+
 while (i < numOfDays) {
     if (i == 0) {
         dailyPay.append(contentsOf: [first])
@@ -28,15 +29,9 @@ while (i < numOfDays) {
     
     i += 1
 }
-print(dailyPay)
-
-// takes dailyPay and adds up each day
-print("\nTotal Pay")
-
-print(totalPay, "\n")
 
 
-// output results properly
+// output results properly in table format
 let colPadding1 = 8
 let colPadLength = 12
 let headerString = "Day".padding(toLength: colPadding1, withPad: " ", startingAt: 0) + "Daily Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0) + "Total Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0)
