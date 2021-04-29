@@ -36,12 +36,12 @@ let colPadding1 = 8
 let colPadLength = 12
 let headerString = "Day".padding(toLength: colPadding1, withPad: " ", startingAt: 0) + "Daily Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0) + "Total Pay".padding(toLength: colPadLength, withPad: " ", startingAt: 0)
 
-print("\(headerString)\n")
+print(" " + "\(headerString)\n")
 i = 0
 while ( i < (numOfDays) ) {
     i += 1
 
-    print("\(i)".padding(toLength: colPadding1, withPad: " ", startingAt: 0)  + ("$\(dailyPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0)) + "$\(totalPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0))
+    print(" " + "\(i)".padding(toLength: colPadding1, withPad: " ", startingAt: 0)  + ("$\(dailyPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0)) + "$\(totalPay[i-1])".padding(toLength: colPadLength, withPad: " ", startingAt: 0))
 }
 
 
