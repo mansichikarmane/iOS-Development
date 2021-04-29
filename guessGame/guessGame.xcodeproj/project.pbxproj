@@ -13,6 +13,7 @@
 		B12669F12637910600592853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12669EF2637910600592853 /* Main.storyboard */; };
 		B12669F32637910900592853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12669F22637910900592853 /* Assets.xcassets */; };
 		B12669F62637910900592853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12669F42637910900592853 /* LaunchScreen.storyboard */; };
+		B15D2EEE263A41360077D120 /* MyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15D2EED263A41360077D120 /* MyTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B12669F22637910900592853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B12669F52637910900592853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B12669F72637910900592853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15D2EED263A41360077D120 /* MyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				B12669EB2637910600592853 /* SceneDelegate.swift */,
 				B12669ED2637910600592853 /* ViewController.swift */,
 				B12669EF2637910600592853 /* Main.storyboard */,
+				B15D2EED263A41360077D120 /* MyTVC.swift */,
 				B12669F22637910900592853 /* Assets.xcassets */,
 				B12669F42637910900592853 /* LaunchScreen.storyboard */,
 				B12669F72637910900592853 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12669EE2637910600592853 /* ViewController.swift in Sources */,
+				B15D2EEE263A41360077D120 /* MyTVC.swift in Sources */,
 				B12669EA2637910600592853 /* AppDelegate.swift in Sources */,
 				B12669EC2637910600592853 /* SceneDelegate.swift in Sources */,
 			);
