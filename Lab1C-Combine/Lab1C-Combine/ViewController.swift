@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var doneEntering = false
     var dailyPay:[Any] = []
     var totalPay:[Any] = []
-    var control = 0
+    
     
     
     override func viewDidLoad() {
