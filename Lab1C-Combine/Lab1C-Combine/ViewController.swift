@@ -17,11 +17,12 @@ class ViewController: UIViewController {
     
     
     // variables for input
-    var startPay = 0
+    var startPay = 0.0
     var numOfDays = 0
     var doneEntering = false
     var dailyPay:[Any] = []
     var totalPay:[Any] = []
+    var control = 0
     
     
     override func viewDidLoad() {
@@ -39,37 +40,60 @@ class ViewController: UIViewController {
         
         // styling output label
         outputField.layer.cornerRadius = 15.0
+        outputField.layer.borderWidth = 2.0
+        outputField.layer.borderColor = UIColor.systemYellow.cgColor
         
         
         // set up when app is launched
         clearPayInputField()
         clearDayInputField()
-        printOutput("Calculations will show here once data is below...")
+        printOutput("Please enter data below")
+        
     }
 
     // button entry and behavior
     @IBAction func calculateInput(_ sender: Any) {
-        if doneEntering {
-            let newEntry = payInputField.text
-            if newEntry == "y" || newEntry == "Y" {
-                doneEntering = false
-                outputField.text = ""
-                clearPayInputField()
-                clearDayInputField()
-                printOutput("\n Calculations will show here once data is below...")
-                return
-            }
-
+        clearOutput()
         
         // calculation logic
-            startPay = Int(payInputField.text!) ?? 0
-            numOfDays = Int(dayInputField.text!) ?? 0
-            
-            if startPay > 0 && numOfDays > 0{
-                printOutput(String(startPay) + "Current Pay")
-            }
+        startPay = Double(payInputField.text!) ?? 0
+        numOfDays = Int(dayInputField.text!) ?? 0
+        
+        var i = 0
+       
+        
+        while (i < numOfDays) {
+                if (numOfDays == 1) {
+                    dailyPay.append(contentsOf: [startPay])
+                }
+                else {
+                    startPay *= 2
+                    dailyPay.append(contentsOf: [startPay])
+                }
+                
+//                tempVal += dailyPay[i-1] as! Double
+//                tempVal = Double(round(100*tempVal)/100)
+//                totalPay.append(contentsOf: [tempVal])
+//
+                i += 1
         }
+            
+        printOutput("On day \(numOfDays), daily pay earned was $\(dailyPay[i-1]) and total pay earned was")
+
+    
+            
+        
     }
+
+    // reset button to start over app
+    @IBAction func clearBtn(_ sender: Any) {
+        clearOutput()
+        printOutput("Please enter data below")
+        clearPayInputField()
+        clearDayInputField()
+        
+    }
+    
     
     
     // helper functions
@@ -83,6 +107,10 @@ class ViewController: UIViewController {
     
     func printOutput(_ printText: String) {
         outputField.text = outputField.text! + printText
+    }
+    
+    func clearOutput() {
+        outputField.text = ""
     }
     
 }
