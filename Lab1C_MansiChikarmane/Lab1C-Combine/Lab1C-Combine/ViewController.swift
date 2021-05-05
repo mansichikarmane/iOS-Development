@@ -51,8 +51,8 @@ class ViewController: UIViewController {
         var dailyPay:[Any] = []
         var totalPay:[Any] = []
         var numOfDays = 0
-        var firstPay = 0.0
-        var tempValue = 0.0
+        var firstPay = 0.00
+        var tempValue = 0.00
         
         numOfDays = Int(dayInputField.text!) ?? 0
         firstPay = Double(payInputField.text!) ?? 0
