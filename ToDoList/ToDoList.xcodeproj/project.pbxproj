@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18C746B264C8FD8007848A9 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C746A264C8FD8007848A9 /* MyTableViewCell.swift */; };
 		B190532426427003007A214F /* MyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190532326427003007A214F /* MyTVC.swift */; };
 		B1F0AEC32642472C004D209B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F0AEC22642472C004D209B /* AppDelegate.swift */; };
 		B1F0AEC52642472C004D209B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F0AEC42642472C004D209B /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B18C746A264C8FD8007848A9 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		B190532326427003007A214F /* MyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTVC.swift; sourceTree = "<group>"; };
 		B1F0AEBF2642472B004D209B /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F0AEC22642472C004D209B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				B1F0AEC42642472C004D209B /* SceneDelegate.swift */,
 				B1F0AEC62642472C004D209B /* ViewController.swift */,
 				B1F0AEC82642472C004D209B /* Main.storyboard */,
+				B18C746A264C8FD8007848A9 /* MyTableViewCell.swift */,
 				B190532326427003007A214F /* MyTVC.swift */,
 				B1F0AECB2642472D004D209B /* Assets.xcassets */,
 				B1F0AECD2642472D004D209B /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				B1F0AEC72642472C004D209B /* ViewController.swift in Sources */,
 				B190532426427003007A214F /* MyTVC.swift in Sources */,
 				B1F0AEC32642472C004D209B /* AppDelegate.swift in Sources */,
+				B18C746B264C8FD8007848A9 /* MyTableViewCell.swift in Sources */,
 				B1F0AEC52642472C004D209B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
