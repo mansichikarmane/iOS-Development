@@ -10,6 +10,7 @@ import UIKit
 class MyTVC: UITableViewController {
 
     var toDoItems = ["Buy Groceries", "Have Lunch", "Study for Test", "Finish Assignment", "Wash Car"]
+    var toDoImages = ["Groceries", "Lunch", "Study", "Assignment", "CarWash"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +41,7 @@ class MyTVC: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = toDoItems[indexPath.row]
+        cell.imageView?.image = UIImage(named: toDoImages[indexPath.row])
         return cell
     }
 
