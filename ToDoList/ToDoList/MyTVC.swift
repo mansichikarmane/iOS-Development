@@ -9,7 +9,33 @@ import UIKit
 
 class MyTVC: UITableViewController {
 
-    var toDoItems = ["Buy Groceries", "Have Lunch", "Study for Test", "Finish Assignment", "Wash Car"]
+    var toDoItems = ["Alaska",
+                     "Arizona",
+                     "California",
+                     "Florida",
+                     "Georgia",
+                     "Hawaii",
+                     "Idaho",
+                     "Illinois",
+                     "Kentucky",
+                     "Maine",
+                     "Maryland",
+                     "Massachusetts",
+                     "Michigan",
+                     "Nevada",
+                     "New Jersey",
+                     "New York",
+                     "Oklahoma",
+                     "Oregon",
+                     "Pennsylvania",
+                     "Rhode Island",
+                     "Washington",
+                     "Wyoming",
+                     "Montana",
+                     "Ohio",
+                     "Vermont",
+                     "New Mexico"
+    ]
     var toDoImages = ["Groceries", "Lunch", "Study", "Assignment", "CarWash"]
     override func viewDidLoad() {
         super.viewDidLoad()
