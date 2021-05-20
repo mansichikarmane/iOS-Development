@@ -12,23 +12,53 @@ struct ContentView: View {
         VStack {
             // Top Menu Bar
             HStack {
+                
                 // Toggle between chat
                 Button(action: {}) {
-                    Image("logo")
+                    Text("home")
                 }
+                Spacer()
                 Button(action: {}) {
-                    Image("bookmarks")
+                    Image("bookmark")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
                 }
-            }
-            // Flip Cards
-            Image("p0")
-            // Bottom Menu Bar
-            HStack {
                 
+            }.padding(.horizontal)
+            // Flip Cards
+//            Image("p0")
+            RoundedRectangle(cornerRadius: 8)
+            // Option buttons
+            HStack {
+                Spacer()
+                Button(action:{}) {
+                    Image("yes")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 80)
+                }
+                Spacer()
+                Button(action:{}) {
+                    Image("yum")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 70)
+                }
+                Spacer()
+                Button(action:{}) {
+                    Image("no")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 80)
+                }
+                Spacer()
+            }
+            // Bottom Menu Bar
+            Spacer()
+            HStack {
+                Button(action:{}){
+                    Image("foodDrinkIcon")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
+                }
+                
+            }.padding(.horizontal)
             }
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
