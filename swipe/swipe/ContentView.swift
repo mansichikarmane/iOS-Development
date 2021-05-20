@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let cardGradient = Gradient(colors: [Color.black.opacity(0), Color.black.opacity(0.5)])
     var body: some View {
         VStack {
             // Top Menu Bar
             HStack {
                 
                 // Toggle between chat
-                Button(action: {}) {
-                    Text("home")
-                }
+//                Button(action: {}) {
+//                    Image("logo")
+//                        .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
+//                }
                 Spacer()
                 Button(action: {}) {
                     Image("bookmark")
@@ -26,9 +29,28 @@ struct ContentView: View {
             }.padding(.horizontal)
             
             // Flip Cards
+    
+            ZStack(alignment: .leading){
+                Image("p0").resizable().cornerRadius(8)
+                VStack {
+                    VStack(alignment: .leading) {
+                        HStack() {
+                            Image("logo").resizable().aspectRatio(contentMode: .fit).frame(height: 45)
+                            Text("@username").fontWeight(.bold)
+                        }
+                        Spacer()
+                        Text("Chicken Tikka Masala").font(.title2)
+                        Text("Restaurant, City").fontWeight(.bold)
+                        
+                    }
+                }.foregroundColor(Color.white).padding()
+            }.padding(8)
             
-            Image("p0").resizable().aspectRatio(contentMode: .fit).frame(height: 450).cornerRadius(15)
-//            RoundedRectangle(cornerRadius: 8)
+            // more rounded edges
+            // 10% smaller card
+            // 9 crews, 1 big tile with actual friends group
+            
+            
             
             // Option buttons
             HStack {
@@ -49,9 +71,7 @@ struct ContentView: View {
                 }
                 Spacer()
             }.padding(.vertical)
-            
-            
-            Text("Foo Crew")
+
             
             // Bottom Menu Bar
             Spacer()
@@ -81,3 +101,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
