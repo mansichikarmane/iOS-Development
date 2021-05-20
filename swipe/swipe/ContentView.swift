@@ -24,14 +24,17 @@ struct ContentView: View {
                 }
                 
             }.padding(.horizontal)
+            
             // Flip Cards
-//            Image("p0")
-            RoundedRectangle(cornerRadius: 8)
+            
+            Image("p0").resizable().aspectRatio(contentMode: .fit).frame(height: 450).cornerRadius(15)
+//            RoundedRectangle(cornerRadius: 8)
+            
             // Option buttons
             HStack {
                 Spacer()
                 Button(action:{}) {
-                    Image("yes")
+                    Image("no")
                         .resizable().aspectRatio(contentMode: .fit).frame(height: 80)
                 }
                 Spacer()
@@ -41,21 +44,34 @@ struct ContentView: View {
                 }
                 Spacer()
                 Button(action:{}) {
-                    Image("no")
+                    Image("yes")
                         .resizable().aspectRatio(contentMode: .fit).frame(height: 80)
                 }
                 Spacer()
-            }
+            }.padding(.vertical)
+            
+            
+            Text("Foo Crew")
+            
             // Bottom Menu Bar
             Spacer()
             HStack {
-                Button(action:{}){
-                    Image("foodDrinkIcon")
+                Button(action: {}) {
+                    Image("logo")
                         .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
                 }
-                
+                Spacer()
+                Button(action:{}){
+                    Image("foodDrinkIcon")
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 30)
+                }
+                Spacer()
+                Button(action:{}){
+                    Image("user")
+                }
             }.padding(.horizontal)
-            }
+            
+        }
         }
     }
 
