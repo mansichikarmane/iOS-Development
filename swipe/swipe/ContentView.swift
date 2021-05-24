@@ -20,16 +20,18 @@ struct ContentView: View {
 //                    Image("logo")
 //                        .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
 //                }
+                Button(action: {}) {
+                    Image("chat").resizable().aspectRatio(contentMode: .fit).frame(height: 35)
+                }
                 Spacer()
                 Button(action: {}) {
                     Image("bookmark")
-                        .resizable().aspectRatio(contentMode: .fit).frame(height: 45)
+                        .resizable().aspectRatio(contentMode: .fit).frame(height: 35)
                 }
                 
             }.padding(.horizontal)
             
             // Flip Cards
-    
             ZStack(alignment: .leading){
                 Image("p0").resizable().cornerRadius(8)
                 VStack {
@@ -44,7 +46,7 @@ struct ContentView: View {
                         
                     }
                 }.foregroundColor(Color.white).padding()
-            }.padding(8)
+            }.padding(10)
             
             // more rounded edges
             // 10% smaller card
